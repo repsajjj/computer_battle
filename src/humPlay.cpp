@@ -1,7 +1,7 @@
 #include "HumPlay.h"
 namespace ComputerBattle{
     HumPlay::HumPlay()
-    {
+    {   setType("Human");
         std::cout << "Playername?" << std::endl;
                 std::string name;
                 std::cin >> name;
@@ -66,7 +66,8 @@ namespace ComputerBattle{
                         default:
                             break;
                         }
-                    system("CLS");                }
+                    system("CLS");
+                    }
     }
 
     HumPlay::~HumPlay()

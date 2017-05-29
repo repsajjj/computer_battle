@@ -23,8 +23,6 @@ namespace ComputerBattle{
 
         private:
             std::vector<Player> players;
-            Visual visual;
-            Reader reader;
     };
 }
 

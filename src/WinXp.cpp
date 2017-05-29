@@ -2,9 +2,9 @@
 namespace ComputerBattle{
     WinXp::WinXp()
     {
-        Computer::setSymbol("XP");
-        Computer::setCost(50);
-        Computer::setName("Windows XP");
+        setSymbol("XP");
+        setCost(50);
+        setName("Windows XP");
     }
 
     WinXp::~WinXp()

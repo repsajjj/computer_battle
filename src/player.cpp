@@ -11,8 +11,17 @@ namespace ComputerBattle{
         name = aName;
     }
 
+    void Player::setType(std::string aType){
+        type = aType;
+    }
+
+
     std::string Player::getName(){
         return name;
+    }
+
+    std::string Player::getType(){
+        return type;
     }
 
     void Player::payment(int aMoney){

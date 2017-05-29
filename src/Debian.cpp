@@ -2,9 +2,9 @@
 namespace ComputerBattle{
     Debian::Debian()
     {
-        Computer::setSymbol("DE");
-        Computer::setCost(300);
-        Computer::setName("Debian 8");
+        setSymbol("DE");
+        setCost(300);
+        setName("Debian 8");
     }
 
     Debian::~Debian()

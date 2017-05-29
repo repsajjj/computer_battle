@@ -81,17 +81,17 @@ namespace ComputerBattle{
             std::cout << "Coordinates(A1)?: ";
             std::vector<int>pos;
             Math *math = new Math();
-            if ( players[playerID].getName() == "Computer"){
+            if ( players[playerID].getType() == "Computer"){
                     pos = math->getRandomPos2(players[oPlayerID].getAllPositions());
                     delete math;
             }
-            else pos = reader.Positions();
+            Reader *reader = new Reader();
+            else pos = reader->Positions();
+            delete reader;
             int x = pos[0]; int y = pos[1];
-            std::cout << y << x << std::endl;
 
             if(players[oPlayerID].nDubbleShot(x,y)&& players[oPlayerID].nDubbleComp(x,y)){
                 Shot tempShot(x,y);
-
                 for(unsigned int i = 0; i <tempComputerPark.size(); i++){
                     if (tempComputerPark[i].getXPosition() == x &&
                         tempComputerPark[i].getYPosition() == y){

@@ -1,0 +1,137 @@
+# depslib dependency file v1.0
+1496068714 source:c:\users\repsa\documents\school\oop3\battleships\main.cpp
+	<iostream>
+	<sstream>
+	<stdlib.h>
+	"Visual.h"
+	"Reader.h"
+	"ComputerBattleGame.h"
+
+1496068573 c:\users\repsa\documents\school\oop3\battleships\include\visual.h
+	<iostream>
+
+1496068574 c:\users\repsa\documents\school\oop3\battleships\include\reader.h
+	<iostream>
+	<vector>
+
+1496068709 c:\users\repsa\documents\school\oop3\battleships\include\computerbattlegame.h
+	<vector>
+	"Player.h"
+	"HumPlay.h"
+	"ComPlay.h"
+	"Map.h"
+	<stdlib.h>
+	"Visual.h"
+	"Reader.h"
+	"Math.h"
+	"Computer.h"
+
+1496072238 c:\users\repsa\documents\school\oop3\battleships\include\player.h
+	<string>
+	<vector>
+	<iostream>
+	"Shot.h"
+	"Computer.h"
+	"Win95.h"
+	"WinXP.h"
+	"Win7.h"
+	"Win10.h"
+	"Debian.h"
+
+1496068573 c:\users\repsa\documents\school\oop3\battleships\include\shot.h
+	<string>
+	<vector>
+
+1496068574 c:\users\repsa\documents\school\oop3\battleships\include\computer.h
+	<string>
+
+1496068573 c:\users\repsa\documents\school\oop3\battleships\include\win95.h
+	"computer.h"
+
+1496068574 c:\users\repsa\documents\school\oop3\battleships\include\winxp.h
+	"Computer.h"
+
+1496068574 c:\users\repsa\documents\school\oop3\battleships\include\win7.h
+	"computer.h"
+
+1496068573 c:\users\repsa\documents\school\oop3\battleships\include\win10.h
+	"computer.h"
+
+1496068574 c:\users\repsa\documents\school\oop3\battleships\include\debian.h
+	"Computer.h"
+
+1496068574 c:\users\repsa\documents\school\oop3\battleships\include\humplay.h
+	<stdlib.h>
+	"visual.h"
+	"Player.h"
+	"Reader.h"
+	"Map.h"
+
+1496068574 c:\users\repsa\documents\school\oop3\battleships\include\map.h
+	<iostream>
+
+1496068573 c:\users\repsa\documents\school\oop3\battleships\include\complay.h
+	"player.h"
+	"Math.h"
+	<chrono>
+	<thread>
+
+1496068574 c:\users\repsa\documents\school\oop3\battleships\include\math.h
+	"vector"
+	<time.h>
+	<stdlib.h>
+
+1496068573 source:c:\users\repsa\documents\school\oop3\battleships\src\complay.cpp
+	"ComPlay.h"
+
+1496068573 source:c:\users\repsa\documents\school\oop3\battleships\src\computer.cpp
+	"Computer.h"
+	<iostream>
+
+1496068726 source:c:\users\repsa\documents\school\oop3\battleships\src\computerbattlegame.cpp
+	"ComputerBattleGame.h"
+
+1496068573 source:c:\users\repsa\documents\school\oop3\battleships\src\debian.cpp
+	"Debian.h"
+
+1496068574 source:c:\users\repsa\documents\school\oop3\battleships\src\map.cpp
+	"Map.h"
+	<iostream>
+	<iomanip>
+	<string>
+
+1496068573 source:c:\users\repsa\documents\school\oop3\battleships\src\math.cpp
+	"Math.h"
+	<iostream>
+
+1496068574 source:c:\users\repsa\documents\school\oop3\battleships\src\reader.cpp
+	"Reader.h"
+
+1496068574 source:c:\users\repsa\documents\school\oop3\battleships\src\shot.cpp
+	"Shot.h"
+
+1496068574 source:c:\users\repsa\documents\school\oop3\battleships\src\visual.cpp
+	"Visual.h"
+	<stdio.h>
+	<windows.h>
+	<conio.h>
+
+1496072353 source:c:\users\repsa\documents\school\oop3\battleships\src\win10.cpp
+	"Win10.h"
+
+1496068573 source:c:\users\repsa\documents\school\oop3\battleships\src\win7.cpp
+	"Win7.h"
+
+1496068573 source:c:\users\repsa\documents\school\oop3\battleships\src\win95.cpp
+	"Win95.h"
+
+1496068573 source:c:\users\repsa\documents\school\oop3\battleships\src\winxp.cpp
+	"WinXp.h"
+
+1496072332 source:c:\users\repsa\documents\school\oop3\battleships\src\humplay.cpp
+	"HumPlay.h"
+
+1496072285 source:c:\users\repsa\documents\school\oop3\battleships\src\player.cpp
+	"player.h"
+	"Map.h"
+

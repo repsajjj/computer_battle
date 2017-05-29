@@ -2,9 +2,9 @@
 namespace ComputerBattle{
     Win95::Win95()
     {
-        Computer::setSymbol("95");
-        Computer::setCost(25);
-        Computer::setName("Windows 95");
+        setSymbol("95");
+        setCost(25);
+        setName("Windows 95");
     }
 
     Win95::~Win95()

@@ -4,7 +4,8 @@ namespace ComputerBattle{
 
     ComPlay::ComPlay()
     {
-        Player::setName("Computer");
+        setType("Computer");
+        setName("Computer");
         std::vector<int>types;
         std::cout << "ComputerPlayer is thinking ..." << std::endl;
 
