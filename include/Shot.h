@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <vector>
 
 namespace BattleShips{
     class Shot
@@ -9,6 +10,9 @@ namespace BattleShips{
             virtual ~Shot();
             int getXPosition();
             int getYPosition();
+            std::vector<int> getPosition();
+            void setName(std::string aName);
+            std::string getName();
             std::string print();
 
         protected:
@@ -16,6 +20,8 @@ namespace BattleShips{
         private:
             int x;
             int y;
+            std::vector<int>position;
+            std::string name;
 
     };
 }

@@ -9,90 +9,29 @@ namespace BattleShips{
     };
 
     void ComputerBattle::generateComputerPlayer(){
-        ComPlay tempPlayer;
+            ComPlay *tempPlayer = new ComPlay();
             std::cout << "[DEBUGGING]: Generate Computer" << std::endl;
-            Map map;
-            std::vector<Computer>computerPark = tempPlayer.getComputerPark();
+            Map *map = new Map();
+            std::vector<Computer>computerPark = tempPlayer->getComputerPark();
 
             for (int i = 0; i < computerPark.size(); i++){
                     int x = computerPark[i].getXPosition();
                     int y = computerPark[i].getYPosition();
                     std::string value = computerPark[i].print();
-                    map.insertValue(x,y,value);
+                    map->insertValue(x,y,value);
             }
-            map.draw();
-            players.push_back(tempPlayer);
+            map->draw();
+            players.push_back(*tempPlayer);
+            delete map;
+            delete tempPlayer;
         };
 
     void ComputerBattle::createHumanPlayer(){
             while(players.size() != 2){
-                Player tempPlayer;
-                std::cout << "Playername?" << std::endl;
-                std::string name;
-                std::cin >> name;
-                system("CLS");
-                tempPlayer.setName(name);
-                while(tempPlayer.getMoney()>=25){
-
-                    std::cout << "Welcome " << tempPlayer.getName() << " to the shop you have $" << tempPlayer.getMoney() << std:: endl;
-                    visual.shop();
-                    int computerType;
-                    std::cin >> computerType;
-                    system("CLS");
-
-                    Map map;
-                    std::vector<Computer>computerPark = tempPlayer.getComputerPark();
-                    for (int i = 0; i <computerPark.size(); i++){
-                            int x = computerPark[i].getXPosition();
-                            int y = computerPark[i].getYPosition();
-                            std::string value = computerPark[i].print();
-                            map.insertValue(x,y,value);
-                    }
-                    map.draw();
-                    std::cout << "Where is it needed to placed? (A5)";
-                    std::vector<int>pos = reader.Positions();
-                    int x = pos[0];
-                    int y = pos[1];
-
-                    switch(computerType){
-                        case 1: {
-                            Win95 comp;
-                            comp.setPosition(x,y);
-                            tempPlayer.payment(comp.getCost());
-                            tempPlayer.addComputer(comp);
-                            }break;
-                        case 2:{
-                            WinXp comp;
-                            comp.setPosition(x,y);
-                            tempPlayer.payment(comp.getCost());
-                            tempPlayer.addComputer(comp);
-                            }break;
-                        case 3:{
-                            Win7 comp;
-                            comp.setPosition(x,y);
-                            tempPlayer.payment(comp.getCost());
-                            tempPlayer.addComputer(comp);
-                            }break;
-                        case 4:{
-                            Win10 comp;
-                            comp.setPosition(x,y);
-                            tempPlayer.payment(comp.getCost());
-                            tempPlayer.addComputer(comp);
-                            }break;
-                        case 5:{
-                            Debian comp;
-                            comp.setPosition(x,y);
-                            tempPlayer.payment(comp.getCost());
-                            tempPlayer.addComputer(comp);
-                            }break;
-                        default:
-                            break;
-                        }
-
-                    system("CLS");
-                }
-            players.push_back(tempPlayer);
-        }
+                HumPlay *tempPlayer = new HumPlay();
+                players.push_back(*tempPlayer);
+                delete tempPlayer;
+            }
     }
 
     std::string ComputerBattle::play(){
@@ -103,7 +42,6 @@ namespace BattleShips{
         int playerID;
         int oPlayerID;
         std::vector<Computer>tempComputerPark;
-
 
         while(true){
             hitTank = false;
@@ -119,35 +57,47 @@ namespace BattleShips{
             std::cout << "To which computer you want to send the virus" << std::endl;
             players[playerID].printAllActiveComputers();
 
-            std::vector<Shot>shots = players[playerID].getShots();
+            std::vector<Shot>shots = players[oPlayerID].getShots();
 
-            Map map;
+            Map *map = new Map();
             for (int i = 0; i < tempComputerPark.size(); i++){
                     int x = tempComputerPark[i].getXPosition();
                     int y = tempComputerPark[i].getYPosition();
                     std::string value = tempComputerPark[i].print();
-                    map.insertValue(x,y,value);
+                    map->insertValue(x,y,value);
             }
 
             for (int i = 0; i < shots.size(); i++){
                     int x = shots[i].getXPosition();
                     int y = shots[i].getYPosition();
-                    std::string value = shots[i].print();
-                    map.insertValue(x,y,value);
+                    if (shots[i].getName() == "miss"){
+                        std::string value = shots[i].print();
+                        map->insertValue(x,y,value);
+                    }
             }
 
-            map.draw();
+            map->draw();
+            delete map;
             std::cout << "Coordinates(A1)?: ";
-            std::vector<int>pos = reader.Positions();
+            std::vector<int>pos;
+            Math *math = new Math();
+            if ( players[playerID].getName() == "Computer"){
+                    pos = math->getRandomPos2(players[oPlayerID].getAllPositions());
+                    delete math;
+            }
+            else pos = reader.Positions();
             int x = pos[0]; int y = pos[1];
+            std::cout << y << x << std::endl;
 
-            if(players[playerID].nDubbleShot(x,y)&& players[oPlayerID].nDubbleComp(x,y)){
+            if(players[oPlayerID].nDubbleShot(x,y)&& players[oPlayerID].nDubbleComp(x,y)){
+                Shot tempShot(x,y);
 
                 for(int i = 0; i <tempComputerPark.size(); i++){
                     if (tempComputerPark[i].getXPosition() == x &&
                         tempComputerPark[i].getYPosition() == y){
                             visual.computerDown(tempComputerPark[i].getName());
                             tempComputerPark[i].setStatus(false);
+                            tempShot.setName("hit");
                             hitTank = true;
                     }
                 }
@@ -160,10 +110,10 @@ namespace BattleShips{
                 }
 
                 if (hitTank == false){
-                      Shot tempShot(x,y);
-                      players[playerID].addShot(tempShot);
+                      tempShot.setName("miss");
                       currentPlayer1 = !currentPlayer1;
                     }
+                players[oPlayerID].addShot(tempShot);
 
                 if (players[oPlayerID].death()== true){
                     return players[playerID].getName();

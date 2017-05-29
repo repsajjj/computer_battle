@@ -1,8 +1,14 @@
 #pragma once
 #include <string>
-#include "computer.h"
-#include "Shot.h"
 #include <vector>
+#include <iostream>
+#include "Shot.h"
+#include "computer.h"
+#include "Win95.h"
+#include "WinXP.h"
+#include "Win7.h"
+#include "Win10.h"
+#include "Debian.h"
 
 namespace BattleShips{
     class Player
@@ -11,6 +17,7 @@ namespace BattleShips{
             Player();
             bool death();
             int getMoney();
+            void shoot();
             void payment(int aMoney);
             void addShot (Shot aShot);
             void visbility(bool status);
@@ -22,6 +29,7 @@ namespace BattleShips{
             void setComputerPark(std::vector<Computer>aComputerPark);
             std::string getName();
             std::vector<Shot> getShots();
+            std::vector<std::vector <int>> getAllPositions();
             std::vector<Computer> getComputerPark();
 
 

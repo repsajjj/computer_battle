@@ -1,16 +1,21 @@
 #pragma once
+#include <stdlib.h>
+#include "visual.h"
+#include "player.h"
+#include "reader.h"
+#include "map.h"
+
 
 namespace BattleShips{
 
-class humPlay
+class HumPlay : public Player
 {
     public:
-        humPlay();
-        virtual ~humPlay();
-
-    protected:
+        HumPlay();
+        virtual ~HumPlay();
 
     private:
+
 };
 }
 

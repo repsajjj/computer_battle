@@ -1,15 +1,4 @@
 #include "ComPlay.h"
-#include <iostream>
-#include <stdlib.h>
-#include "Win95.h"
-#include "WinXP.h"
-#include "Win7.h"
-#include "Win10.h"
-#include "Debian.h"
-#include <chrono>
-#include <thread>
-#include <time.h>
-
 
 namespace BattleShips{
 
@@ -20,10 +9,11 @@ namespace BattleShips{
         std::cout << "ComputerPlayer is thinking ..." << std::endl;
 
         while (Player::getMoney() >= 25){
-            srand((unsigned)time(NULL));
-            int type = rand() % 5+1;
-            int x = rand() % 9;
-            int y = rand() % 9;
+            Math *math = new Math();
+            int type = math->getRandom(6);
+            int x = math->getRandom(9);
+            int y = math->getRandom(9);
+            delete math;
             for(int i = 0; i > computerPark.size(); i++){
                 if(computerPark[i].getXPosition()== x && computerPark[i].getYPosition()== y ){
                     type = 0;
@@ -89,5 +79,8 @@ namespace BattleShips{
     ComPlay::~ComPlay()
     {
         //dtor
+    }
+
+    void Player::shoot(){
     }
 }

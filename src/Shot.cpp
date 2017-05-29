@@ -6,6 +6,8 @@ namespace BattleShips{
     {
         x = xT;
         y = yT;
+        position.push_back(x);
+        position.push_back(y);
     }
 
     Shot::~Shot()
@@ -21,7 +23,19 @@ namespace BattleShips{
        return y;
     }
 
+    void Shot::setName(std::string aName){
+        name = aName;
+    }
+
+    std::string Shot::getName(){
+        return name;
+    }
+
     std::string Shot::print(){
         return "**";
+    }
+
+    std::vector<int> Shot::getPosition(){
+        return position;
     }
 }

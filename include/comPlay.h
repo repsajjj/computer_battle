@@ -1,5 +1,10 @@
 #pragma once
 #include "player.h"
+#include "math.h"
+#include <chrono>
+#include <thread>
+
+
 
 namespace BattleShips{
     class ComPlay: public Player
@@ -8,9 +13,7 @@ namespace BattleShips{
             ComPlay();
             virtual ~ComPlay();
 
-        protected:
 
-        private:
     };
 }
 

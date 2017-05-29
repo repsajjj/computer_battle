@@ -93,5 +93,14 @@ namespace BattleShips{
         }
         return true;
     }
+
+    std::vector<std::vector <int>> Player::getAllPositions(){
+        std::vector<std::vector <int>> temp;
+        for(int i = 0; i <shots.size(); i++){
+            temp.push_back(shots[i].getPosition());
+            }
+        return temp;
+    }
+
 }
 
