@@ -5,6 +5,7 @@ namespace ComputerBattle{
         setSymbol("95");
         setCost(25);
         setName("Windows 95");
+        setWidth(1);
     }
 
     Win95::~Win95()

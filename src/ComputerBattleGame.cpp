@@ -1,4 +1,5 @@
 #include "ComputerBattleGame.h"
+
 namespace ComputerBattle{
     ComputerBattleGame::ComputerBattleGame()
     {
@@ -53,7 +54,7 @@ namespace ComputerBattle{
                     playerID=1; oPlayerID=0;
                     tempComputerPark = players[0].getComputerPark();
             }
-            std::cout << players[playerID].getName() << " it's you're turn" << std::endl;
+            std::cout << players[playerID].getName() << " it's your turn" << std::endl;
             std::cout << "To which computer you want to send the virus" << std::endl;
             players[playerID].printAllActiveComputers();
 
@@ -75,7 +76,6 @@ namespace ComputerBattle{
                         map->insertValue(x,y,value);
                     }
             }
-
             map->draw();
             delete map;
             std::cout << "Coordinates(A1)?: ";
@@ -83,11 +83,15 @@ namespace ComputerBattle{
             Math *math = new Math();
             if ( players[playerID].getType() == "Computer"){
                     pos = math->getRandomPos2(players[oPlayerID].getAllPositions());
+                    std::cout << char (pos[1]+65) << pos[0]+1 << std::endl;
                     delete math;
             }
-            Reader *reader = new Reader();
-            else pos = reader->Positions();
-            delete reader;
+
+            else {
+                    Reader *reader = new Reader();
+                    pos = reader->Positions();
+                    delete reader;
+            }
             int x = pos[0]; int y = pos[1];
 
             if(players[oPlayerID].nDubbleShot(x,y)&& players[oPlayerID].nDubbleComp(x,y)){
@@ -95,7 +99,9 @@ namespace ComputerBattle{
                 for(unsigned int i = 0; i <tempComputerPark.size(); i++){
                     if (tempComputerPark[i].getXPosition() == x &&
                         tempComputerPark[i].getYPosition() == y){
-                            visual.computerDown(tempComputerPark[i].getName());
+                            Visual *visual = new Visual();
+                            visual->computerDown(tempComputerPark[i].getName(),tempComputerPark[i].getWidth());
+                            delete visual;
                             tempComputerPark[i].setStatus(false);
                             tempShot.setName("hit");
                             hitTank = true;

@@ -5,6 +5,7 @@ namespace ComputerBattle{
         setSymbol("10");
         setCost(150);
         setName("Windows 10");
+        setWidth(2);
     }
 
     Win10::~Win10()

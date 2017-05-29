@@ -13,8 +13,10 @@ int main()
     Reader reader2;
     ComputerBattleGame game2;
 
-    visual2.center();
+    visual2.left();
+
     visual2.welcome();
+    system("mode 640");
     system("PAUSE");
     system("CLS");
 

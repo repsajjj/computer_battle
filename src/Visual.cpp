@@ -13,7 +13,7 @@ namespace ComputerBattle{
         //dtor
     }
 
-    void Visual::center(){
+    void Visual::left(){
     //Get the window console handle(isn't the right code but works for these sample
     HWND ConsoleWindow;
     ConsoleWindow=GetForegroundWindow();
@@ -36,8 +36,8 @@ namespace ComputerBattle{
     //caculate the window console to center of the screen
     int ConsolePosX;
     int ConsolePosY;
-    ConsolePosX = ((rectScreen.right-rectScreen.left)/2-Width/2 );
-    ConsolePosY = ((rectScreen.bottom-rectScreen.top)/2- Height/2 );
+    ConsolePosX = ((rectScreen.right/2.75)-Width/2 );
+    ConsolePosY = ((rectScreen.top/2.75)+ 0 );
     SetWindowPos(ConsoleWindow,NULL,ConsolePosX,ConsolePosY, Width, Height, SWP_SHOWWINDOW || SWP_NOSIZE);
     }
 
@@ -96,9 +96,10 @@ namespace ComputerBattle{
         std::cout << "Credits: Jasper Vercnocke";
         std::cout << std::endl;}
 
-    void Visual::computerDown(std::string name){
-        std::cout << "Good job: you infected 1 computer" << std::endl;
+    void Visual::computerDown(std::string name, int width){
+        std::cout << "Good job: you infected 1 computerPart" << std::endl;
         std::cout << "Details:" << std::endl;
         std::cout << "    -Type: " << name << std::endl;
+        std::cout << "    -Width: " << width << std::endl;
     }
 }

@@ -32,40 +32,8 @@ namespace ComputerBattle{
                     int x = pos[0];
                     int y = pos[1];
 
-                    switch(computerType){
-                        case 1: {
-                            Win95 comp;
-                            comp.setPosition(x,y);
-                            payment(comp.getCost());
-                            addComputer(comp);
-                            }break;
-                        case 2:{
-                            WinXp comp;
-                            comp.setPosition(x,y);
-                            payment(comp.getCost());
-                            addComputer(comp);
-                            }break;
-                        case 3:{
-                            Win7 comp;
-                            comp.setPosition(x,y);
-                            payment(comp.getCost());
-                            addComputer(comp);
-                            }break;
-                        case 4:{
-                            Win10 comp;
-                            comp.setPosition(x,y);
-                            payment(comp.getCost());
-                            addComputer(comp);
-                            }break;
-                        case 5:{
-                            Debian comp;
-                            comp.setPosition(x,y);
-                            payment(comp.getCost());
-                            addComputer(comp);
-                            }break;
-                        default:
-                            break;
-                        }
+                    generateComputer(x, y, computerType);
+
                     system("CLS");
                     }
     }

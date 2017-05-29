@@ -20,58 +20,7 @@ namespace ComputerBattle{
                     type = 0;
                 }
             }
-            switch(type){
-                case 1: {
-                    Win95 comp;
-                    if (comp.getCost()> Player::getMoney()){
-                        break;
-                    }
-                    payment(comp.getCost());
-                    comp.setPosition(x,y);
-                    addComputer(comp);
-
-                    }break;
-                case 2:{
-                    WinXp comp;
-                    if (comp.getCost()> Player::getMoney()){
-                        break;
-                    }
-                    payment(comp.getCost());
-                    comp.setPosition(x,y);
-                    addComputer(comp);
-                    }break;
-                case 3:{
-                    Win7 comp;
-                    if (comp.getCost()> Player::getMoney()){
-                        break;
-                    }
-                    payment(comp.getCost());
-                    comp.setPosition(x,y);
-                    addComputer(comp);
-
-                    }break;
-                case 4:{
-                    Win10 comp;
-                    if (comp.getCost()> Player::getMoney()){
-                        break;
-                    }
-                    payment(comp.getCost());
-                    comp.setPosition(x,y);
-                    addComputer(comp);
-                    }break;
-                case 5:{
-                    Debian comp;
-                    if (comp.getCost()> Player::getMoney()){
-                        break;
-                    }
-                    payment(comp.getCost());
-                    comp.setPosition(x,y);
-                    addComputer(comp);
-                    }break;
-                default:
-
-                    break;
-                }
+            generateComputer(x,y,type);
            std::this_thread::sleep_for(std::chrono::seconds(1));
         }
 

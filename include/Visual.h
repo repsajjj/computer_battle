@@ -9,10 +9,10 @@ namespace ComputerBattle{
             virtual ~Visual();
             void welcome();
             void shop();
-            void center();
+            void left();
             void choosePlayers();
             void endGame(std::string name);
-            void computerDown(std::string name);
+            void computerDown(std::string name, int width);
 
         protected:
 

@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include "windows.h"
 #include "Shot.h"
 #include "Computer.h"
 #include "Win95.h"
@@ -27,6 +28,7 @@ namespace ComputerBattle{
             bool nDubbleComp(int x, int y);
             bool nDubbleShot(int x, int y);
             void addComputer(Computer aComputer);
+            void generateComputer(int x, int y, int aType);
             void setComputerPark(std::vector<Computer>aComputerPark);
             std::string getName();
             std::string getType();
