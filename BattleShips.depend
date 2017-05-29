@@ -95,13 +95,13 @@
 1495910768 source:c:\users\blablabla\documents\vives\oop3\battleships\src\reader.cpp
 	"Reader.h"
 
-1495917174 c:\users\blablabla\documents\vives\oop3\battleships\include\shot.h
+1495917174 c:\users\blablabla\documents\vives\oop3\battleships\include\Shot.h
 	<string>
 
-1495917226 source:c:\users\blablabla\documents\vives\oop3\battleships\src\shot.cpp
+1495917226 source:c:\users\blablabla\documents\vives\oop3\battleships\src\Shot.cpp
 	"Shot.h"
 
-1495968773 c:\users\blablabla\documents\vives\oop3\battleships\include\computerbattle.h
+1495968773 c:\users\blablabla\documents\vives\oop3\battleships\include\ComputerBattle.h
 	<vector>
 	"player.h"
 	"comPlay.h"
@@ -115,7 +115,7 @@
 	"Visual.h"
 	"Reader.h"
 
-1495970359 source:c:\users\blablabla\documents\vives\oop3\battleships\src\computerbattle.cpp
+1495970359 source:c:\users\blablabla\documents\vives\oop3\battleships\src\ComputerBattle.cpp
 	"ComputerBattle.h"
 
 1495994757 source:c:\users\repsa\documents\school\oop3\battleships\main.cpp
@@ -151,7 +151,7 @@
 	"Reader.h"
 	"Computer.h"
 
-1495991576 c:\users\repsa\documents\school\oop3\battleships\include\player.h
+1496050965 c:\users\repsa\documents\school\oop3\battleships\include\player.h
 	<string>
 	"computer.h"
 	"Shot.h"
@@ -194,7 +194,7 @@
 	<thread>
 	<time.h>
 
-1495994414 source:c:\users\repsa\documents\school\oop3\battleships\src\computer.cpp
+1496050965 source:c:\users\repsa\documents\school\oop3\battleships\src\computer.cpp
 	"Computer.h"
 	<iostream>
 
@@ -207,7 +207,7 @@
 	<iomanip>
 	<string>
 
-1495991807 source:c:\users\repsa\documents\school\oop3\battleships\src\player.cpp
+1496050965 source:c:\users\repsa\documents\school\oop3\battleships\src\player.cpp
 	"player.h"
 	"map.h"
 
@@ -361,4 +361,3 @@
 
 1496047574 source:c:\users\blablabla\documents\git\computer_ships\computer_battle\src\computerbattle.cpp
 	"ComputerBattle.h"
-
