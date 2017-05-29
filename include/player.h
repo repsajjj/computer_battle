@@ -17,6 +17,8 @@ namespace BattleShips{
             void visbility(bool status);
             void printAllActiveComputers();
             void setName(std::string Aname);
+            bool nDubbleComp(int x, int y);
+            bool nDubbleShot(int x, int y);
             void addComputer(Computer aComputer);
             void setComputerPark(std::vector<Computer>aComputerPark);
             std::string getName();

@@ -73,4 +73,25 @@ namespace BattleShips{
         computerPark = aComputerPark;
     }
 
+    bool Player::nDubbleComp(int x, int y){
+        for(int i = 0; i <computerPark.size(); i++){
+            if (computerPark[i].getXPosition() == x &&
+                computerPark[i].getYPosition() == y &&
+                computerPark[i].getStatus() == false ){
+                     return false;
+            }
+        }
+         return true;
+    }
+
+    bool Player::nDubbleShot(int x, int y){
+        for(int i = 0; i <shots.size(); i++){
+            if (shots[i].getXPosition() == x &&
+                 shots[i].getYPosition() == y){
+                        return false;
+            }
+        }
+        return true;
+    }
 }
+

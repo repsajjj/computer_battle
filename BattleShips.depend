@@ -242,3 +242,123 @@
 	"Computer.h"
 	<string>
 
+1496045868 source:c:\users\blablabla\documents\git\computer_ships\computer_battle\main.cpp
+	<iostream>
+	<sstream>
+	<stdlib.h>
+	"Visual.h"
+	"Reader.h"
+	"ComputerBattle.h"
+
+1496045868 c:\users\blablabla\documents\git\computer_ships\computer_battle\include\visual.h
+	<iostream>
+
+1496045868 c:\users\blablabla\documents\git\computer_ships\computer_battle\include\reader.h
+	<iostream>
+	<vector>
+
+1496045868 c:\users\blablabla\documents\git\computer_ships\computer_battle\include\computerbattle.h
+	<vector>
+	"player.h"
+	"comPlay.h"
+	"map.h"
+	"Win95.h"
+	"WinXP.h"
+	"Win7.h"
+	"Win10.h"
+	"Debian.h"
+	<stdlib.h>
+	"Visual.h"
+	"Reader.h"
+	"Computer.h"
+
+1496047237 c:\users\blablabla\documents\git\computer_ships\computer_battle\include\player.h
+	<string>
+	"computer.h"
+	"Shot.h"
+	<vector>
+
+1496045868 c:\users\blablabla\documents\git\computer_ships\computer_battle\include\computer.h
+	<string>
+
+1496045868 c:\users\blablabla\documents\git\computer_ships\computer_battle\include\shot.h
+	<string>
+
+1496045868 c:\users\blablabla\documents\git\computer_ships\computer_battle\include\complay.h
+	"player.h"
+
+1496045868 c:\users\blablabla\documents\git\computer_ships\computer_battle\include\map.h
+	<iostream>
+
+1496045868 c:\users\blablabla\documents\git\computer_ships\computer_battle\include\win95.h
+	"computer.h"
+
+1496045868 c:\users\blablabla\documents\git\computer_ships\computer_battle\include\winxp.h
+	"computer.h"
+
+1496045868 c:\users\blablabla\documents\git\computer_ships\computer_battle\include\win7.h
+	"computer.h"
+
+1496045868 c:\users\blablabla\documents\git\computer_ships\computer_battle\include\win10.h
+	"computer.h"
+
+1496045868 c:\users\blablabla\documents\git\computer_ships\computer_battle\include\debian.h
+	"computer.h"
+
+1496045868 source:c:\users\blablabla\documents\git\computer_ships\computer_battle\src\complay.cpp
+	"ComPlay.h"
+	<iostream>
+	<stdlib.h>
+	"Win95.h"
+	"WinXP.h"
+	"Win7.h"
+	"Win10.h"
+	"Debian.h"
+	<chrono>
+	<thread>
+	<time.h>
+
+1496047768 source:c:\users\blablabla\documents\git\computer_ships\computer_battle\src\computer.cpp
+	"Computer.h"
+	<iostream>
+
+1496045868 source:c:\users\blablabla\documents\git\computer_ships\computer_battle\src\debian.cpp
+	"Debian.h"
+
+1496045868 source:c:\users\blablabla\documents\git\computer_ships\computer_battle\src\map.cpp
+	"map.h"
+	<iostream>
+	<iomanip>
+	<string>
+
+1496047634 source:c:\users\blablabla\documents\git\computer_ships\computer_battle\src\player.cpp
+	"player.h"
+	"map.h"
+
+1496045868 source:c:\users\blablabla\documents\git\computer_ships\computer_battle\src\reader.cpp
+	"Reader.h"
+
+1496045868 source:c:\users\blablabla\documents\git\computer_ships\computer_battle\src\visual.cpp
+	"Visual.h"
+	<stdio.h>
+	<windows.h>
+	<conio.h>
+
+1496045868 source:c:\users\blablabla\documents\git\computer_ships\computer_battle\src\win10.cpp
+	"Win10.h"
+
+1496045868 source:c:\users\blablabla\documents\git\computer_ships\computer_battle\src\win7.cpp
+	"Win7.h"
+
+1496045868 source:c:\users\blablabla\documents\git\computer_ships\computer_battle\src\win95.cpp
+	"Win95.h"
+
+1496045868 source:c:\users\blablabla\documents\git\computer_ships\computer_battle\src\winxp.cpp
+	"WinXp.h"
+
+1496045868 source:c:\users\blablabla\documents\git\computer_ships\computer_battle\src\shot.cpp
+	"Shot.h"
+
+1496047574 source:c:\users\blablabla\documents\git\computer_ships\computer_battle\src\computerbattle.cpp
+	"ComputerBattle.h"
+

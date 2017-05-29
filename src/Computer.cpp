@@ -2,7 +2,7 @@
 #include <iostream>
 namespace BattleShips{
         Computer::Computer(){
-            status = true;
+            status = false;
         }
 
         void Computer::setPosition(int x1,int y1){
@@ -36,7 +36,7 @@ namespace BattleShips{
         }
 
         std::string Computer::print(){
-            if (status == 0){
+            if (status == false){
                 return symbol;
             }
             else return "??";

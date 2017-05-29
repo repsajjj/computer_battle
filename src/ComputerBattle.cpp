@@ -139,38 +139,39 @@ namespace BattleShips{
             map.draw();
             std::cout << "Coordinates(A1)?: ";
             std::vector<int>pos = reader.Positions();
-            int x = pos[0];
-            int y = pos[1];
+            int x = pos[0]; int y = pos[1];
 
-            for(int i = 0; i <tempComputerPark.size(); i++){
-                if (tempComputerPark[i].getXPosition() == x &&
-                    tempComputerPark[i].getYPosition() == y){
-                        visual.computerDown(tempComputerPark[i].getName());
-                        tempComputerPark[i].setStatus(false);
-                        hitTank = true;
-                }
-            }
+            if(players[playerID].nDubbleShot(x,y)&& players[oPlayerID].nDubbleComp(x,y)){
 
-            if (currentPlayer1 == true){
-                    players[1].setComputerPark(tempComputerPark);
-            }
-            else {
-                    players[0].setComputerPark(tempComputerPark);
-            }
-
-            if (hitTank == false){
-                  Shot tempShot(x,y);
-                  players[playerID].addShot(tempShot);
-                  currentPlayer1 = !currentPlayer1;
+                for(int i = 0; i <tempComputerPark.size(); i++){
+                    if (tempComputerPark[i].getXPosition() == x &&
+                        tempComputerPark[i].getYPosition() == y){
+                            visual.computerDown(tempComputerPark[i].getName());
+                            tempComputerPark[i].setStatus(false);
+                            hitTank = true;
+                    }
                 }
 
-            if (players[oPlayerID].death()== true){
-                return players[playerID].getName();
-            }
+                if (currentPlayer1 == true){
+                        players[1].setComputerPark(tempComputerPark);
+                }
+                else {
+                        players[0].setComputerPark(tempComputerPark);
+                }
 
+                if (hitTank == false){
+                      Shot tempShot(x,y);
+                      players[playerID].addShot(tempShot);
+                      currentPlayer1 = !currentPlayer1;
+                    }
+
+                if (players[oPlayerID].death()== true){
+                    return players[playerID].getName();
+                }
+            }
+            else std::cout << "You're already hit on this location" << std::endl;
             system("PAUSE");
             system("CLS");
-
         }
     }
 }
