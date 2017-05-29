@@ -69,15 +69,15 @@ namespace ComputerBattle{
      std::cout << " |                                        |" << std::endl;
      std::cout << " | [SYM]  [NAME]       [PRICE]   [WIDTH]  |" << std::endl;
      std::cout << " |                                        |" << std::endl;
-     std::cout << " |   1   Windows 95      $25        1     |" << std::endl;
+     std::cout << " |   1   Windows 95      $25        3     |" << std::endl;
      std::cout << " |                                        |" << std::endl;
-     std::cout << " |   2   Windows XP      $50        1     |" << std::endl;
+     std::cout << " |   2   Windows XP      $50        3     |" << std::endl;
      std::cout << " |                                        |" << std::endl;
      std::cout << " |   3   Windows 7       $100       2     |" << std::endl;
      std::cout << " |                                        |" << std::endl;
      std::cout << " |   4   Windows 10      $150       2     |" << std::endl;
      std::cout << " |                                        |" << std::endl;
-     std::cout << " |   5   Debian 8        $300       3     |" << std::endl;
+     std::cout << " |   5   Debian 8        $300       1     |" << std::endl;
      std::cout << " |                                        |" << std::endl;
      std::cout << " ------------------------------------------" << std::endl;
      std::cout << "What would you like to buy (put the number)" << std::endl;

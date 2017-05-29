@@ -5,7 +5,7 @@ namespace ComputerBattle{
         setSymbol("XP");
         setCost(50);
         setName("Windows XP");
-        setWidth(1);
+        setWidth(3);
     }
 
     WinXp::~WinXp()

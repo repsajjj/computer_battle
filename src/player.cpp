@@ -112,100 +112,34 @@ namespace ComputerBattle{
     }
 
     void Player::generateComputer(int x, int y, int aType){
-                    switch(aType){
-                case 1: {
-                    Win95 *comp = new Win95();
-                    if (comp->getCost()> Player::getMoney()|| comp->getWidth()+y>9){
-                        if (Player::type == "Human"){std::cout << "You have not enough money for this computer or the location was invalid" << std::endl; system("PAUSE");}
-                        delete comp;
-                        break;
-                    }
-                    payment(comp->getCost());
-                    comp->setPosition(x,y);
-                    addComputer(*comp);
-                    for(int i = 1; i<comp->getWidth();i++){
-                        Win95 *compT = new Win95();
-                        compT->setPosition(x,y+i);
-                        addComputer(*compT);
-                        delete compT;
-                    }
-                    delete comp;
+        if(aType == 0) return;
+        std::vector<Computer>tempAllUComputers;
+        Win95 win95;
+        WinXp winXp;
+        Win7 win7;
+        Win10 win10;
+        Debian debian;
+        tempAllUComputers.push_back(win95);
+        tempAllUComputers.push_back(winXp);
+        tempAllUComputers.push_back(win7);
+        tempAllUComputers.push_back(win10);
+        tempAllUComputers.push_back(debian);
 
-                    }break;
-                case 2:{
-                    WinXp *comp = new WinXp();
-                    if (comp->getCost()> Player::getMoney()|| comp->getWidth()+y>9){
-                    if (Player::type == "Human"){std::cout << "You have not enough money for this computer or the location was invalid" << std::endl; system("PAUSE");}                        delete comp;
-                        break;
-                    }
-                    payment(comp->getCost());
-                    comp->setPosition(x,y);
-                    addComputer(*comp);
-                    for(int i = 1; i<comp->getWidth();i++){
-                        WinXp *compT = new WinXp();
-                        compT->setPosition(x,y+i);
-                        addComputer(*compT);
-                        delete compT;
-                    }
-                    delete comp;
-                    }break;
-                case 3:{
-                    Win7 *comp = new Win7();
-                    if (comp->getCost()> Player::getMoney()|| comp->getWidth()+y>9){
-                        if (Player::type == "Human"){std::cout << "You have not enough money for this computer or the location was invalid" << std::endl; system("PAUSE");}
-                        delete comp;
-                        break;
-                    }
-                    payment(comp->getCost());
-                    comp->setPosition(x,y);
-                    addComputer(*comp);
-                    for(int i = 1; i<comp->getWidth();i++){
-                        Win7 *compT = new Win7();
-                        compT->setPosition(x,y+i);
-                        addComputer(*compT);
-                        delete compT;
-                    }
-                    delete comp;
-
-                    }break;
-                case 4:{
-                    Win10 *comp = new Win10();
-                    if (comp->getCost()> Player::getMoney()|| comp->getWidth()+y>9){
-                        if (Player::type == "Human"){std::cout << "You have not enough money for this computer or the location was invalid" << std::endl; system("PAUSE");}
-                        delete comp;
-                        break;
-                    }
-                    payment(comp->getCost());
-                    comp->setPosition(x,y);
-                    addComputer(*comp);
-                    for(int i = 1; i<comp->getWidth();i++){
-                        Win10 *compT = new Win10();
-                        compT->setPosition(x,y+i);
-                        addComputer(*compT);
-                        delete compT;
-                    }
-                    delete comp;
-                    }break;
-                case 5:{
-                    Debian *comp = new Debian();
-                    if (comp->getCost()> Player::getMoney()|| comp->getWidth()+y>9){
-                        if (Player::type == "Human"){std::cout << "You have not enough money for this computer or the location was invalid" << std::endl; system("PAUSE");}
-                        delete comp;
-                        break;
-                    }
-                    payment(comp->getCost());
-                    comp->setPosition(x,y);
-                    addComputer(*comp);
-                    for(int i = 1; i<(comp->getWidth());i++){
-                        Debian *compT = new Debian();
-                        compT->setPosition(x,y+i);
-                        addComputer(*compT);
-                        delete compT;
-                    }
-                    delete comp;
-                    }break;
-                default:
-                    break;
-                }
+        Computer comp = tempAllUComputers[(aType-1)];
+        if (comp.getCost()> Player::getMoney()|| comp.getWidth()+y>9){
+            if (Player::type == "Human"){
+                    std::cout << "You have not enough money for this computer or the location was invalid" << std::endl;
+                    system("PAUSE");
+            }
+                return;
+        }
+        payment(comp.getCost());
+        comp.setPosition(x,y);
+        addComputer(comp);
+        for(int i = 1; i<comp.getWidth();i++){
+            Computer compT = tempAllUComputers[aType-1];
+            compT.setPosition(x,y+i);
+            addComputer(compT);
+            }
         }
 }

@@ -225,7 +225,7 @@
 	"Computer.h"
 	<iostream>
 
-1496086044 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\computerbattlegame.cpp
+1496090007 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\computerbattlegame.cpp
 	"ComputerBattleGame.h"
 
 1496082916 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\debian.cpp
@@ -244,7 +244,7 @@
 	"Math.h"
 	<iostream>
 
-1496087277 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\player.cpp
+1496099220 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\player.cpp
 	"player.h"
 	"Map.h"
 
