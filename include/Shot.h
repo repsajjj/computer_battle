@@ -1,5 +1,4 @@
-#ifndef SHOT_H
-#define SHOT_H
+#pragma once
 #include <string>
 
 namespace BattleShips{
@@ -20,5 +19,3 @@ namespace BattleShips{
 
     };
 }
-
-#endif // SHOT_H

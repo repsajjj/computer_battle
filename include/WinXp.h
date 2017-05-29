@@ -1,5 +1,4 @@
-#ifndef WINXP_H
-#define WINXP_H
+#pragma once
 #include "computer.h"
 
 namespace BattleShips{
@@ -16,4 +15,3 @@ namespace BattleShips{
     };
 };
 
-#endif // WINXP_H

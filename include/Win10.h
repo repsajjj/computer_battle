@@ -1,5 +1,4 @@
-#ifndef WIN10_
-#define WIN10_H
+#pragma once
 #include "computer.h"
 
 namespace BattleShips{
@@ -17,4 +16,3 @@ namespace BattleShips{
     };
 }
 
-#endif // WIN10_H

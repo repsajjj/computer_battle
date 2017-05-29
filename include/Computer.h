@@ -1,5 +1,4 @@
-#ifndef COMPUTER_H
-#define COMPUTER_H
+#pragma once
 #include <string>
 
 namespace BattleShips{
@@ -35,4 +34,3 @@ namespace BattleShips{
     };
 };
 
-#endif // COMPUTER_H

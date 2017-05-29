@@ -1,5 +1,4 @@
-#ifndef COMPUTERBATTLE_H
-#define COMPUTERBATTLE_H
+#pragma once
 #include <vector>
 #include "player.h"
 #include "comPlay.h"
@@ -33,4 +32,4 @@ namespace BattleShips{
     };
 }
 
-#endif // COMPUTERBATTLE_H
+

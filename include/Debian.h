@@ -1,5 +1,4 @@
-#ifndef DEBIAN_H
-#define DEBIAN_H
+#pragma once
 #include "computer.h"
 
 namespace BattleShips{
@@ -15,4 +14,4 @@ namespace BattleShips{
     };
 };
 
-#endif // DEBIAN_H
+

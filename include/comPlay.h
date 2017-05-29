@@ -1,5 +1,4 @@
-#ifndef COMPLAY_H
-#define COMPLAY_H
+#pragma once
 #include "player.h"
 
 namespace BattleShips{
@@ -15,4 +14,3 @@ namespace BattleShips{
     };
 }
 
-#endif // COMPLAY_H

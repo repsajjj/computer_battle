@@ -1,5 +1,4 @@
-#ifndef READER_H
-#define READER_H
+#pragma once
 #include <iostream>
 #include <vector>
 
@@ -17,5 +16,3 @@ namespace BattleShips{
     };
 }
 
-
-#endif // READER_H

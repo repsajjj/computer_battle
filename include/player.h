@@ -1,5 +1,4 @@
-#ifndef PLAYER_H
-#define PLAYER_H
+#pragma once
 #include <string>
 #include "computer.h"
 #include "Shot.h"
@@ -35,5 +34,3 @@ namespace BattleShips{
             std::vector<Shot> shots;
     };
 };
-
-#endif // PLAYER_H

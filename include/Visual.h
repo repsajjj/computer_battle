@@ -1,5 +1,4 @@
-#ifndef VISUAL_H
-#define VISUAL_H
+#pragma once
 #include <iostream>
 
 namespace BattleShips{
@@ -21,4 +20,3 @@ namespace BattleShips{
     };
 }
 
-#endif // VISUAL_H

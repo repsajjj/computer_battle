@@ -1,5 +1,4 @@
-#ifndef WIN7_H
-#define WIN7_H
+#pragma once
 #include "computer.h"
 
 namespace BattleShips{
@@ -16,4 +15,4 @@ namespace BattleShips{
     };
 };
 
-#endif // WIN7_H
+
