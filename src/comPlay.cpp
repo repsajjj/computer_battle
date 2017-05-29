@@ -1,6 +1,6 @@
 #include "ComPlay.h"
 
-namespace BattleShips{
+namespace ComputerBattle{
 
     ComPlay::ComPlay()
     {
@@ -14,7 +14,7 @@ namespace BattleShips{
             int x = math->getRandom(9);
             int y = math->getRandom(9);
             delete math;
-            for(int i = 0; i > computerPark.size(); i++){
+            for(unsigned int i = 0; i > computerPark.size(); i++){
                 if(computerPark[i].getXPosition()== x && computerPark[i].getYPosition()== y ){
                     type = 0;
                 }

@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-namespace BattleShips{
+namespace ComputerBattle{
     class Computer
     {
         public:

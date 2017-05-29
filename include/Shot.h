@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-namespace BattleShips{
+namespace ComputerBattle{
     class Shot
     {
         public:

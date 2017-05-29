@@ -1,21 +1,21 @@
 #pragma once
 #include <vector>
-#include "player.h"
-#include "humPlay.h"
-#include "comPlay.h"
-#include "map.h"
+#include "Player.h"
+#include "HumPlay.h"
+#include "ComPlay.h"
+#include "Map.h"
 #include <stdlib.h>
 #include "Visual.h"
 #include "Reader.h"
-#include "math.h"
+#include "Math.h"
 #include "Computer.h"
 
-namespace BattleShips{
-    class ComputerBattle
+namespace ComputerBattle{
+    class ComputerBattleGame
     {
         public:
-            ComputerBattle();
-            virtual ~ComputerBattle();
+            ComputerBattleGame();
+            virtual ~ComputerBattleGame();
             void generateComputerPlayer();
             void createHumanPlayer();
             std::string play();

@@ -1,20 +1,20 @@
-#include "ComputerBattle.h"
-namespace BattleShips{
-    ComputerBattle::ComputerBattle()
+#include "ComputerBattleGame.h"
+namespace ComputerBattle{
+    ComputerBattleGame::ComputerBattleGame()
     {
     };
 
-    ComputerBattle::~ComputerBattle()
+    ComputerBattleGame::~ComputerBattleGame()
     {
     };
 
-    void ComputerBattle::generateComputerPlayer(){
+    void ComputerBattleGame::generateComputerPlayer(){
             ComPlay *tempPlayer = new ComPlay();
             std::cout << "[DEBUGGING]: Generate Computer" << std::endl;
             Map *map = new Map();
             std::vector<Computer>computerPark = tempPlayer->getComputerPark();
 
-            for (int i = 0; i < computerPark.size(); i++){
+            for (unsigned int i = 0; i < computerPark.size(); i++){
                     int x = computerPark[i].getXPosition();
                     int y = computerPark[i].getYPosition();
                     std::string value = computerPark[i].print();
@@ -26,7 +26,7 @@ namespace BattleShips{
             delete tempPlayer;
         };
 
-    void ComputerBattle::createHumanPlayer(){
+    void ComputerBattleGame::createHumanPlayer(){
             while(players.size() != 2){
                 HumPlay *tempPlayer = new HumPlay();
                 players.push_back(*tempPlayer);
@@ -34,7 +34,7 @@ namespace BattleShips{
             }
     }
 
-    std::string ComputerBattle::play(){
+    std::string ComputerBattleGame::play(){
         players[0].visbility(false);
         players[1].visbility(false);
         bool currentPlayer1 = true;
@@ -60,14 +60,14 @@ namespace BattleShips{
             std::vector<Shot>shots = players[oPlayerID].getShots();
 
             Map *map = new Map();
-            for (int i = 0; i < tempComputerPark.size(); i++){
+            for (unsigned int i = 0; i < tempComputerPark.size(); i++){
                     int x = tempComputerPark[i].getXPosition();
                     int y = tempComputerPark[i].getYPosition();
                     std::string value = tempComputerPark[i].print();
                     map->insertValue(x,y,value);
             }
 
-            for (int i = 0; i < shots.size(); i++){
+            for (unsigned int i = 0; i < shots.size(); i++){
                     int x = shots[i].getXPosition();
                     int y = shots[i].getYPosition();
                     if (shots[i].getName() == "miss"){
@@ -92,7 +92,7 @@ namespace BattleShips{
             if(players[oPlayerID].nDubbleShot(x,y)&& players[oPlayerID].nDubbleComp(x,y)){
                 Shot tempShot(x,y);
 
-                for(int i = 0; i <tempComputerPark.size(); i++){
+                for(unsigned int i = 0; i <tempComputerPark.size(); i++){
                     if (tempComputerPark[i].getXPosition() == x &&
                         tempComputerPark[i].getYPosition() == y){
                             visual.computerDown(tempComputerPark[i].getName());

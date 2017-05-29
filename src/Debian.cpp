@@ -1,5 +1,5 @@
 #include "Debian.h"
-namespace BattleShips{
+namespace ComputerBattle{
     Debian::Debian()
     {
         Computer::setSymbol("DE");

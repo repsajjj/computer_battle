@@ -1,12 +1,12 @@
 #pragma once
 #include <stdlib.h>
 #include "visual.h"
-#include "player.h"
-#include "reader.h"
-#include "map.h"
+#include "Player.h"
+#include "Reader.h"
+#include "Map.h"
 
 
-namespace BattleShips{
+namespace ComputerBattle{
 
 class HumPlay : public Player
 {

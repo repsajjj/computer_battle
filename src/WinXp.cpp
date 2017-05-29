@@ -1,5 +1,5 @@
 #include "WinXp.h"
-namespace BattleShips{
+namespace ComputerBattle{
     WinXp::WinXp()
     {
         Computer::setSymbol("XP");

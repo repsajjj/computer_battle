@@ -1,6 +1,6 @@
 #include "Math.h"
 #include <iostream>
-namespace BattleShips{
+namespace ComputerBattle{
     Math::Math()
     {
        srand((unsigned)time(NULL));
@@ -17,7 +17,7 @@ namespace BattleShips{
             int x = rand()%9;
             int y = rand()%9;
 
-            for (int i = 0; i < positions.size(); i++){
+            for (unsigned int i = 0; i < positions.size(); i++){
                 if (x == positions[i][0] && y == positions[i][1]){
                     goto start_rnd;
                 }

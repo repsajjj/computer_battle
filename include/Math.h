@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 
-namespace BattleShips{
+namespace ComputerBattle{
 class Math
 {
     public:

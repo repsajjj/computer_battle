@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 
-namespace BattleShips{
+namespace ComputerBattle{
     class Reader
     {
         public:

@@ -1,5 +1,5 @@
 #include "Reader.h"
-namespace BattleShips{
+namespace ComputerBattle{
     Reader::Reader()
     {
         //ctor

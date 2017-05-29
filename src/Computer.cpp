@@ -1,6 +1,6 @@
 #include "Computer.h"
 #include <iostream>
-namespace BattleShips{
+namespace ComputerBattle{
         Computer::Computer(){
             status = false;
         }

@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 
-namespace BattleShips{
+namespace ComputerBattle{
     class Visual
     {
         public:

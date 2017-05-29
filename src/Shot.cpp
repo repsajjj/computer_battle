@@ -1,6 +1,6 @@
 #include "Shot.h"
 
-namespace BattleShips{
+namespace ComputerBattle{
 
     Shot::Shot(int xT, int yT)
     {

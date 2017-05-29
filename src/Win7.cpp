@@ -1,5 +1,5 @@
 #include "Win7.h"
-namespace BattleShips{
+namespace ComputerBattle{
     Win7::Win7()
     {
         Computer::setSymbol("07");

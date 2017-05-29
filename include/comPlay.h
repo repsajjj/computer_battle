@@ -1,12 +1,10 @@
 #pragma once
 #include "player.h"
-#include "math.h"
+#include "Math.h"
 #include <chrono>
 #include <thread>
 
-
-
-namespace BattleShips{
+namespace ComputerBattle{
     class ComPlay: public Player
     {
         public:

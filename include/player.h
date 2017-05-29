@@ -3,14 +3,14 @@
 #include <vector>
 #include <iostream>
 #include "Shot.h"
-#include "computer.h"
+#include "Computer.h"
 #include "Win95.h"
 #include "WinXP.h"
 #include "Win7.h"
 #include "Win10.h"
 #include "Debian.h"
 
-namespace BattleShips{
+namespace ComputerBattle{
     class Player
     {
         public:

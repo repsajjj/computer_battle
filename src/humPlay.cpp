@@ -1,5 +1,5 @@
-#include "humPlay.h"
-namespace BattleShips{
+#include "HumPlay.h"
+namespace ComputerBattle{
     HumPlay::HumPlay()
     {
         std::cout << "Playername?" << std::endl;
@@ -17,7 +17,7 @@ namespace BattleShips{
                     system("CLS");
 
                     Map *map = new Map();
-                    for (int i = 0; i <computerPark.size(); i++){
+                    for (unsigned int i = 0; i <computerPark.size(); i++){
                             int x = computerPark[i].getXPosition();
                             int y = computerPark[i].getYPosition();
                             std::string value = computerPark[i].print();

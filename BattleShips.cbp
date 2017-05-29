@@ -34,29 +34,37 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/ComPlay.h" />
 		<Unit filename="include/Computer.h" />
+		<Unit filename="include/ComputerBattleGame.h" />
 		<Unit filename="include/Debian.h" />
+		<Unit filename="include/HumPlay.h" />
+		<Unit filename="include/Map.h" />
+		<Unit filename="include/Math.h" />
+		<Unit filename="include/Player.h" />
 		<Unit filename="include/Reader.h" />
+		<Unit filename="include/Shot.h" />
 		<Unit filename="include/Visual.h" />
 		<Unit filename="include/Win10.h" />
 		<Unit filename="include/Win7.h" />
 		<Unit filename="include/Win95.h" />
 		<Unit filename="include/WinXp.h" />
-		<Unit filename="include/comPlay.h" />
-		<Unit filename="include/map.h" />
-		<Unit filename="include/player.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/ComPlay.cpp" />
 		<Unit filename="src/Computer.cpp" />
+		<Unit filename="src/ComputerBattleGame.cpp" />
 		<Unit filename="src/Debian.cpp" />
+		<Unit filename="src/HumPlay.cpp" />
+		<Unit filename="src/Map.cpp" />
+		<Unit filename="src/Math.cpp" />
+		<Unit filename="src/Player.cpp" />
 		<Unit filename="src/Reader.cpp" />
+		<Unit filename="src/Shot.cpp" />
 		<Unit filename="src/Visual.cpp" />
 		<Unit filename="src/Win10.cpp" />
 		<Unit filename="src/Win7.cpp" />
 		<Unit filename="src/Win95.cpp" />
 		<Unit filename="src/WinXp.cpp" />
-		<Unit filename="src/comPlay.cpp" />
-		<Unit filename="src/map.cpp" />
-		<Unit filename="src/player.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -3,15 +3,15 @@
 #include <stdlib.h>
 #include "Visual.h"
 #include "Reader.h"
-#include "ComputerBattle.h"
+#include "ComputerBattleGame.h"
 
-using namespace BattleShips;
+using namespace ComputerBattle;
 
 int main()
 {
     Visual visual2;
     Reader reader2;
-    ComputerBattle game2;
+    ComputerBattleGame game2;
 
     visual2.center();
     visual2.welcome();

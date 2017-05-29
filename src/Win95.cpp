@@ -1,5 +1,5 @@
 #include "Win95.h"
-namespace BattleShips{
+namespace ComputerBattle{
     Win95::Win95()
     {
         Computer::setSymbol("95");

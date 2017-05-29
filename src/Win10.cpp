@@ -1,5 +1,5 @@
 #include "Win10.h"
-namespace BattleShips{
+namespace ComputerBattle{
     Win10::Win10()
     {
         Computer::setSymbol("10");

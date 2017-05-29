@@ -1,9 +1,9 @@
-#include "map.h"
+#include "Map.h"
 #include <iostream>
 #include <iomanip>
 #include <string>
 
-namespace BattleShips{
+namespace ComputerBattle{
     Map::Map(){
         for(int i = 0; i < 10; i++){
             for (int j = 0; j <10; j++){

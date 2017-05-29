@@ -1,7 +1,7 @@
 #pragma once
 #include "computer.h"
 
-namespace BattleShips{
+namespace ComputerBattle{
     class Win95 : public Computer
     {
         public:
