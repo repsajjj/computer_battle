@@ -14,9 +14,9 @@ int main()
     ComputerBattleGame game2;
 
     visual2.left();
+    system("mode 640");
 
     visual2.welcome();
-    system("mode 640");
     system("PAUSE");
     system("CLS");
 
@@ -26,14 +26,14 @@ int main()
     system("CLS");
 
     if (gameType == 2){
-        game2.generateComputerPlayer();
+        game2.generateComputerPlayer("Computer");
         system("PAUSE");
         system("CLS");
     }
 
     if (gameType == 3){ //DEBUGGING TOOL
-        game2.generateComputerPlayer();
-        game2.generateComputerPlayer();
+        game2.generateComputerPlayer("Computer 1");
+        game2.generateComputerPlayer("Computer 2");
         system("PAUSE");
         system("CLS");
     }

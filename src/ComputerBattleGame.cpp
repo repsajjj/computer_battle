@@ -5,12 +5,9 @@ namespace ComputerBattle{
     {
     };
 
-    ComputerBattleGame::~ComputerBattleGame()
-    {
-    };
 
-    void ComputerBattleGame::generateComputerPlayer(){
-            ComPlay *tempPlayer = new ComPlay();
+    void ComputerBattleGame::generateComputerPlayer(std::string name){
+            ComPlay *tempPlayer = new ComPlay(name);
             std::cout << "[DEBUGGING]: Generate Computer" << std::endl;
             Map *map = new Map();
             std::vector<Computer>computerPark = tempPlayer->getComputerPark();
@@ -56,7 +53,9 @@ namespace ComputerBattle{
             }
             std::cout << players[playerID].getName() << " it's your turn" << std::endl;
             std::cout << "To which computer you want to send the virus" << std::endl;
-            players[playerID].printAllActiveComputers();
+            if (players[playerID].getType() == "Human"){
+                    players[playerID].printAllActiveComputers();
+            }
 
             std::vector<Shot>shots = players[oPlayerID].getShots();
 

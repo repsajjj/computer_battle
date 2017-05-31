@@ -18,7 +18,6 @@ namespace ComputerBattle{
             Player();
             bool death();
             int getMoney();
-            void shoot();
             void payment(int aMoney);
             void addShot (Shot aShot);
             void visbility(bool status);
@@ -28,7 +27,7 @@ namespace ComputerBattle{
             bool nDubbleComp(int x, int y);
             bool nDubbleShot(int x, int y);
             void addComputer(Computer aComputer);
-            void generateComputer(int x, int y, int aType);
+            void createComputer(int x, int y, int aType);
             void setComputerPark(std::vector<Computer>aComputerPark);
             std::string getName();
             std::string getType();

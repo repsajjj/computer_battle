@@ -32,7 +32,7 @@ namespace ComputerBattle{
                     int x = pos[0];
                     int y = pos[1];
 
-                    generateComputer(x, y, computerType);
+                    createComputer(x, y, computerType);
 
                     system("CLS");
                     }

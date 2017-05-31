@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/BattleShips" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/ComputerBattle" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -34,12 +34,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/ComPlay.h" />
 		<Unit filename="include/Computer.h" />
 		<Unit filename="include/ComputerBattleGame.h" />
 		<Unit filename="include/Debian.h" />
-		<Unit filename="include/HumPlay.h" />
-		<Unit filename="include/Map.h" />
 		<Unit filename="include/Math.h" />
 		<Unit filename="include/Player.h" />
 		<Unit filename="include/Reader.h" />
@@ -49,13 +46,15 @@
 		<Unit filename="include/Win7.h" />
 		<Unit filename="include/Win95.h" />
 		<Unit filename="include/WinXp.h" />
+		<Unit filename="include/comPlay.h" />
+		<Unit filename="include/humPlay.h" />
+		<Unit filename="include/map.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/ComPlay.cpp" />
 		<Unit filename="src/Computer.cpp" />
 		<Unit filename="src/ComputerBattleGame.cpp" />
 		<Unit filename="src/Debian.cpp" />
 		<Unit filename="src/HumPlay.cpp" />
-		<Unit filename="src/Map.cpp" />
 		<Unit filename="src/Math.cpp" />
 		<Unit filename="src/Player.cpp" />
 		<Unit filename="src/Reader.cpp" />
@@ -65,6 +64,7 @@
 		<Unit filename="src/Win7.cpp" />
 		<Unit filename="src/Win95.cpp" />
 		<Unit filename="src/WinXp.cpp" />
+		<Unit filename="src/map.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

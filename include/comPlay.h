@@ -8,7 +8,7 @@ namespace ComputerBattle{
     class ComPlay: public Player
     {
         public:
-            ComPlay();
+            ComPlay(std::string name);
             virtual ~ComPlay();
 
 

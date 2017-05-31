@@ -2,10 +2,10 @@
 
 namespace ComputerBattle{
 
-    ComPlay::ComPlay()
+    ComPlay::ComPlay(std::string name)
     {
         setType("Computer");
-        setName("Computer");
+        setName(name);
         std::vector<int>types;
         std::cout << "ComputerPlayer is thinking ..." << std::endl;
 
@@ -20,7 +20,7 @@ namespace ComputerBattle{
                     type = 0;
                 }
             }
-            generateComputer(x,y,type);
+            createComputer(x,y,type);
            std::this_thread::sleep_for(std::chrono::seconds(1));
         }
 
@@ -31,6 +31,4 @@ namespace ComputerBattle{
         //dtor
     }
 
-    void Player::shoot(){
-    }
 }

@@ -111,7 +111,7 @@ namespace ComputerBattle{
         return temp;
     }
 
-    void Player::generateComputer(int x, int y, int aType){
+    void Player::createComputer(int x, int y, int aType){
         if(aType == 0) return;
         std::vector<Computer>tempAllUComputers;
         Win95 win95;
@@ -126,7 +126,7 @@ namespace ComputerBattle{
         tempAllUComputers.push_back(debian);
 
         Computer comp = tempAllUComputers[(aType-1)];
-        if (comp.getCost()> Player::getMoney()|| comp.getWidth()+y>9){
+        if (comp.getCost()> Player::getMoney()|| (comp.getWidth()-1)+y>9){
             if (Player::type == "Human"){
                     std::cout << "You have not enough money for this computer or the location was invalid" << std::endl;
                     system("PAUSE");

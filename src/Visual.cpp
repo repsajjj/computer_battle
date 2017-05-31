@@ -1,7 +1,4 @@
 #include "Visual.h"
-#include <stdio.h>
-#include <windows.h>
-#include <conio.h>
 
 namespace ComputerBattle{
 

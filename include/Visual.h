@@ -1,5 +1,8 @@
 #pragma once
+#include <stdio.h>
+#include <conio.h>
 #include <iostream>
+#include <windows.h>
 
 namespace ComputerBattle{
     class Visual
@@ -13,10 +16,6 @@ namespace ComputerBattle{
             void choosePlayers();
             void endGame(std::string name);
             void computerDown(std::string name, int width);
-
-        protected:
-
-        private:
     };
 }
 
