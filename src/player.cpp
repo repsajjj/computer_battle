@@ -112,7 +112,7 @@ namespace ComputerBattle{
     }
 
     void Player::createComputer(int x, int y, int aType){
-        if(aType == 0) return;
+        if (aType == 0)return;
         std::vector<Computer>tempAllUComputers;
         Win95 win95;
         WinXp winXp;
@@ -126,13 +126,34 @@ namespace ComputerBattle{
         tempAllUComputers.push_back(debian);
 
         Computer comp = tempAllUComputers[(aType-1)];
-        if (comp.getCost()> Player::getMoney()|| (comp.getWidth()-1)+y>9){
+        if (comp.getCost()> Player::getMoney()){
             if (Player::type == "Human"){
-                    std::cout << "You have not enough money for this computer or the location was invalid" << std::endl;
+                    std::cout << "You have not enough money for this computer" << std::endl;
                     system("PAUSE");
             }
                 return;
         }
+
+        if (comp.getWidth()-1+y>9){
+           if (Player::type == "Human"){
+               std::cout << "This location is invalid: You can't place a computer outside the map" << std::endl;
+               system("PAUSE");
+            }
+            return;
+        }
+
+        for(int i = 0; i < computerPark.size(); i++){
+            for (int j = 0; j < comp.getWidth(); j++){
+                if(computerPark[i].getXPosition()== x && computerPark[i].getYPosition()== y+j ){
+                    if (Player::type == "Human"){
+                        std::cout << "This location is invalid: You can't set a computer above another one" << std::endl;
+                        system("PAUSE");
+                    }
+                    return;
+                }
+            }
+        }
+
         payment(comp.getCost());
         comp.setPosition(x,y);
         addComputer(comp);

@@ -1,4 +1,5 @@
 #include "ComPlay.h"
+#include <windows.h>
 
 namespace ComputerBattle{
 
@@ -15,11 +16,12 @@ namespace ComputerBattle{
             int x = math->getRandom(9);
             int y = math->getRandom(9);
             delete math;
-            for(unsigned int i = 0; i > computerPark.size(); i++){
+            /*for(unsigned int i = 0; i > computerPark.size(); i++){
                 if(computerPark[i].getXPosition()== x && computerPark[i].getYPosition()== y ){
+                        for (unsigned int i = 0; i > computerPark.size(); i++)
                     type = 0;
                 }
-            }
+            }*/
             createComputer(x,y,type);
            std::this_thread::sleep_for(std::chrono::seconds(1));
         }
