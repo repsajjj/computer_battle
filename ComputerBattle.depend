@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1496223633 source:c:\users\repsa\documents\school\oop3\battleships\main.cpp
+1496330461 source:c:\users\repsa\documents\school\oop3\battleships\main.cpp
 	<iostream>
 	<sstream>
 	<stdlib.h>
@@ -17,7 +17,7 @@
 	<iostream>
 	<vector>
 
-1496223633 c:\users\repsa\documents\school\oop3\battleships\include\computerbattlegame.h
+1496248721 c:\users\repsa\documents\school\oop3\battleships\include\computerbattlegame.h
 	<vector>
 	"Player.h"
 	"HumPlay.h"
@@ -93,7 +93,7 @@
 	"Computer.h"
 	<iostream>
 
-1496223633 source:c:\users\repsa\documents\school\oop3\battleships\src\computerbattlegame.cpp
+1496248742 source:c:\users\repsa\documents\school\oop3\battleships\src\computerbattlegame.cpp
 	"ComputerBattleGame.h"
 
 1496223633 source:c:\users\repsa\documents\school\oop3\battleships\src\debian.cpp
@@ -133,7 +133,7 @@
 1496223633 source:c:\users\repsa\documents\school\oop3\battleships\src\humplay.cpp
 	"HumPlay.h"
 
-1496240022 source:c:\users\repsa\documents\school\oop3\battleships\src\player.cpp
+1496256530 source:c:\users\repsa\documents\school\oop3\battleships\src\player.cpp
 	"player.h"
 	"Map.h"
 

@@ -5,6 +5,10 @@ namespace ComputerBattle{
     {
     };
 
+     ComputerBattleGame::~ComputerBattleGame(){
+        //dtor
+    }
+
 
     void ComputerBattleGame::generateComputerPlayer(std::string name){
             ComPlay *tempPlayer = new ComPlay(name);

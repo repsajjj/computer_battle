@@ -45,6 +45,8 @@ int main()
     system("CLS");
     visual2.endGame(name);
 
+    system("PAUSE");
+
     return 0;
 
 

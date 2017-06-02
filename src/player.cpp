@@ -142,8 +142,8 @@ namespace ComputerBattle{
             return;
         }
 
-        for(int i = 0; i < computerPark.size(); i++){
-            for (int j = 0; j < comp.getWidth(); j++){
+        for(unsigned int i = 0; i < computerPark.size(); i++){
+            for (unsigned int j = 0; j < comp.getWidth(); j++){
                 if(computerPark[i].getXPosition()== x && computerPark[i].getYPosition()== y+j ){
                     if (Player::type == "Human"){
                         std::cout << "This location is invalid: You can't set a computer above another one" << std::endl;
@@ -157,7 +157,7 @@ namespace ComputerBattle{
         payment(comp.getCost());
         comp.setPosition(x,y);
         addComputer(comp);
-        for(int i = 1; i<comp.getWidth();i++){
+        for(unsigned int i = 1; i<comp.getWidth();i++){
             Computer compT = tempAllUComputers[aType-1];
             compT.setPosition(x,y+i);
             addComputer(compT);

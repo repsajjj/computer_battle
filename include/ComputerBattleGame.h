@@ -15,6 +15,7 @@ namespace ComputerBattle{
     {
         public:
             ComputerBattleGame();
+            virtual ~ComputerBattleGame();
             void generateComputerPlayer(std::string name);
             void createHumanPlayer();
             std::string play();
