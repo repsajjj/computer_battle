@@ -57,6 +57,8 @@ namespace ComputerBattle{
             std::cout << "                \\ \\_______\\ \\__\\ \\__\\   \\ \\__\\     \\ \\__\\ \\ \\_______\\ \\_______\\           " << std::endl;
             std::cout << "                 \\|_______|\\|__|\\|__|    \\|__|      \\|__|  \\|_______|\\|_______|           " << std::endl;
             std::cout << std::endl;
+            std::cout << std::endl;
+            std::cout << std::endl;
     }
 
     void Visual::shop(){
@@ -64,13 +66,13 @@ namespace ComputerBattle{
      std::cout << " |           Computer Shop                |" << std::endl;
      std::cout << " ------------------------------------------" << std::endl;
      std::cout << " |                                        |" << std::endl;
-     std::cout << " | [SYM]  [NAME]       [PRICE]   [WIDTH]  |" << std::endl;
+     std::cout << " | [NUM]  [NAME]       [PRICE]   [WIDTH]  |" << std::endl;
      std::cout << " |                                        |" << std::endl;
-     std::cout << " |   1   Windows 95      $25        3     |" << std::endl;
+     std::cout << " |   1   Windows 95      $25        5     |" << std::endl;
      std::cout << " |                                        |" << std::endl;
-     std::cout << " |   2   Windows XP      $50        3     |" << std::endl;
+     std::cout << " |   2   Windows XP      $50        4     |" << std::endl;
      std::cout << " |                                        |" << std::endl;
-     std::cout << " |   3   Windows 7       $100       2     |" << std::endl;
+     std::cout << " |   3   Windows 7       $100       3     |" << std::endl;
      std::cout << " |                                        |" << std::endl;
      std::cout << " |   4   Windows 10      $150       2     |" << std::endl;
      std::cout << " |                                        |" << std::endl;

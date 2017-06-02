@@ -5,7 +5,7 @@ namespace ComputerBattle{
         setSymbol("07");
         setCost(100);
         setName("Windows 7");
-        setWidth(2);
+        setWidth(3);
     }
 
     Win7::~Win7()

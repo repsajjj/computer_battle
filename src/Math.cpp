@@ -14,8 +14,8 @@ namespace ComputerBattle{
     std::vector<int> Math::getRandomPos2(std::vector<std::vector<int>> positions){
 
             start_rnd:
-            int x = rand()%9;
-            int y = rand()%9;
+            int x = rand()%10;
+            int y = rand()%10;
 
             for (unsigned int i = 0; i < positions.size(); i++){
                 if (x == positions[i][0] && y == positions[i][1]){
@@ -30,7 +30,7 @@ namespace ComputerBattle{
     }
 
     int Math::getRandom(int value){
-            return rand() % value;
+            return rand() % value+1;
     }
 
 }

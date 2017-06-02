@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1496330461 source:c:\users\repsa\documents\school\oop3\battleships\main.cpp
+1496397949 source:c:\users\repsa\documents\school\oop3\battleships\main.cpp
 	<iostream>
 	<sstream>
 	<stdlib.h>
@@ -74,7 +74,7 @@
 1496068574 c:\users\repsa\documents\school\oop3\battleships\include\map.h
 	<iostream>
 
-1496223633 c:\users\repsa\documents\school\oop3\battleships\include\complay.h
+1496396203 c:\users\repsa\documents\school\oop3\battleships\include\complay.h
 	"player.h"
 	"Math.h"
 	<chrono>
@@ -85,7 +85,7 @@
 	<time.h>
 	<stdlib.h>
 
-1496233837 source:c:\users\repsa\documents\school\oop3\battleships\src\complay.cpp
+1496397605 source:c:\users\repsa\documents\school\oop3\battleships\src\complay.cpp
 	"ComPlay.h"
 	<windows.h>
 
@@ -105,7 +105,7 @@
 	<iomanip>
 	<string>
 
-1496068573 source:c:\users\repsa\documents\school\oop3\battleships\src\math.cpp
+1496395688 source:c:\users\repsa\documents\school\oop3\battleships\src\math.cpp
 	"Math.h"
 	<iostream>
 
@@ -115,19 +115,19 @@
 1496068574 source:c:\users\repsa\documents\school\oop3\battleships\src\shot.cpp
 	"Shot.h"
 
-1496223633 source:c:\users\repsa\documents\school\oop3\battleships\src\visual.cpp
+1496397327 source:c:\users\repsa\documents\school\oop3\battleships\src\visual.cpp
 	"Visual.h"
 
 1496091110 source:c:\users\repsa\documents\school\oop3\battleships\src\win10.cpp
 	"Win10.h"
 
-1496091110 source:c:\users\repsa\documents\school\oop3\battleships\src\win7.cpp
+1496397349 source:c:\users\repsa\documents\school\oop3\battleships\src\win7.cpp
 	"Win7.h"
 
-1496223633 source:c:\users\repsa\documents\school\oop3\battleships\src\win95.cpp
+1496397342 source:c:\users\repsa\documents\school\oop3\battleships\src\win95.cpp
 	"Win95.h"
 
-1496223633 source:c:\users\repsa\documents\school\oop3\battleships\src\winxp.cpp
+1496397335 source:c:\users\repsa\documents\school\oop3\battleships\src\winxp.cpp
 	"WinXp.h"
 
 1496223633 source:c:\users\repsa\documents\school\oop3\battleships\src\humplay.cpp

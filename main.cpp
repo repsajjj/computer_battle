@@ -4,7 +4,6 @@
 #include "Visual.h"
 #include "Reader.h"
 #include "ComputerBattleGame.h"
-
 using namespace ComputerBattle;
 
 int main()
@@ -15,6 +14,7 @@ int main()
 
     visual2.left();
     system("mode 640");
+    system("color 02");
 
     visual2.welcome();
     system("PAUSE");

@@ -8,22 +8,17 @@ namespace ComputerBattle{
         setType("Computer");
         setName(name);
         std::vector<int>types;
-        std::cout << "ComputerPlayer is thinking ..." << std::endl;
+        std::cout << getName() <<" is thinking ..." << std::endl;
 
         while (Player::getMoney() >= 25){
             Math *math = new Math();
-            int type = math->getRandom(6);
+            int type = math->getRandom(5);
             int x = math->getRandom(9);
             int y = math->getRandom(9);
             delete math;
-            /*for(unsigned int i = 0; i > computerPark.size(); i++){
-                if(computerPark[i].getXPosition()== x && computerPark[i].getYPosition()== y ){
-                        for (unsigned int i = 0; i > computerPark.size(); i++)
-                    type = 0;
-                }
-            }*/
-            createComputer(x,y,type);
-           std::this_thread::sleep_for(std::chrono::seconds(1));
+
+           createComputer(x,y,type);
+           std::this_thread::sleep_for(std::chrono::milliseconds(250));
         }
 
     }
