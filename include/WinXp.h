@@ -7,11 +7,6 @@ namespace ComputerBattle{
         public:
             WinXp();
             virtual ~WinXp();
-
-        protected:
-
-
-        private:
     };
 };
 

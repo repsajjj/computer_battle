@@ -7,11 +7,6 @@ namespace ComputerBattle{
         public:
             Win95();
             virtual ~Win95();
-
-        protected:
-
-
-        private:
     };
 };
 

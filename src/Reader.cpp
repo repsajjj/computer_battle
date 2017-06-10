@@ -19,6 +19,5 @@ namespace ComputerBattle{
         temp.push_back(x);
         temp.push_back(y);
         return temp;
-
     }
 }

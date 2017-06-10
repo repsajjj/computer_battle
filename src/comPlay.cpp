@@ -1,5 +1,4 @@
 #include "ComPlay.h"
-#include <windows.h>
 
 namespace ComputerBattle{
 
@@ -20,12 +19,10 @@ namespace ComputerBattle{
            createComputer(x,y,type);
            std::this_thread::sleep_for(std::chrono::milliseconds(250));
         }
-
     }
 
     ComPlay::~ComPlay()
     {
         //dtor
     }
-
 }

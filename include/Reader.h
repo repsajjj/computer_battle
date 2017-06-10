@@ -9,10 +9,6 @@ namespace ComputerBattle{
             Reader();
             virtual ~Reader();
             std::vector<int>Positions();
-
-        protected:
-
-        private:
     };
 }
 

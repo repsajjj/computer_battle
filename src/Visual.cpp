@@ -10,27 +10,22 @@ namespace ComputerBattle{
         //dtor
     }
 
-    void Visual::left(){
-    //Get the window console handle(isn't the right code but works for these sample
+    void Visual::center(){
     HWND ConsoleWindow;
     ConsoleWindow=GetForegroundWindow();
 
-    //Getting the desktop hadle and rectangule
     HWND   hwndScreen;
     RECT   rectScreen;
     hwndScreen=GetDesktopWindow ();
     GetWindowRect(hwndScreen,&rectScreen);
 
-    //Set windows size(see the width problem)
     SetWindowPos (ConsoleWindow,NULL,0,0,1000,500, SWP_SHOWWINDOW);
 
-    // Get the current width and height of the console
     RECT rConsole;
     GetWindowRect (ConsoleWindow,&rConsole);
     int Width = rConsole.left = rConsole.right;
     int Height = rConsole.bottom - rConsole.top;
 
-    //caculate the window console to center of the screen
     int ConsolePosX;
     int ConsolePosY;
     ConsolePosX = ((rectScreen.right/2.75)-Width/2 );
@@ -96,7 +91,7 @@ namespace ComputerBattle{
         std::cout << std::endl;}
 
     void Visual::computerDown(std::string name, int width){
-        std::cout << "Good job: you infected 1 computerPart" << std::endl;
+        std::cout << "Good job: you infected 1 computer(Part)" << std::endl;
         std::cout << "Details:" << std::endl;
         std::cout << "    -Type: " << name << std::endl;
         std::cout << "    -Width: " << width << std::endl;

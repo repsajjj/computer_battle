@@ -14,8 +14,6 @@ class HumPlay : public Player
         HumPlay();
         virtual ~HumPlay();
 
-    private:
-
 };
 }
 

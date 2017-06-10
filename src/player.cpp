@@ -1,5 +1,4 @@
 #include "player.h"
-#include "Map.h"
 
 namespace ComputerBattle{
     Player::Player()
@@ -126,8 +125,8 @@ namespace ComputerBattle{
         tempAllUComputers.push_back(debian);
 
         Computer comp = tempAllUComputers[(aType-1)];
-        if (comp.getCost()> Player::getMoney()){
-            if (Player::type == "Human"){
+        if (comp.getCost()> getMoney()){
+            if (type == "Human"){
                     std::cout << "You have not enough money for this computer" << std::endl;
                     system("PAUSE");
             }
@@ -135,7 +134,7 @@ namespace ComputerBattle{
         }
 
         if (comp.getWidth()-1+y>9){
-           if (Player::type == "Human"){
+           if (type == "Human"){
                std::cout << "This location is invalid: You can't place a computer outside the map" << std::endl;
                system("PAUSE");
             }
@@ -143,9 +142,9 @@ namespace ComputerBattle{
         }
 
         for(unsigned int i = 0; i < computerPark.size(); i++){
-            for (unsigned int j = 0; j < comp.getWidth(); j++){
+            for (int j = 0; j < comp.getWidth(); j++){
                 if(computerPark[i].getXPosition()== x && computerPark[i].getYPosition()== y+j ){
-                    if (Player::type == "Human"){
+                    if (type == "Human"){
                         std::cout << "This location is invalid: You can't set a computer above another one" << std::endl;
                         system("PAUSE");
                     }
@@ -157,10 +156,11 @@ namespace ComputerBattle{
         payment(comp.getCost());
         comp.setPosition(x,y);
         addComputer(comp);
-        for(unsigned int i = 1; i<comp.getWidth();i++){
+
+        for(int i = 1; i<comp.getWidth();i++){
             Computer compT = tempAllUComputers[aType-1];
             compT.setPosition(x,y+i);
             addComputer(compT);
-            }
         }
+    }
 }

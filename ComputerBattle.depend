@@ -137,42 +137,42 @@
 	"player.h"
 	"Map.h"
 
-1496143084 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\main.cpp
+1497131102 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\main.cpp
 	<iostream>
 	<sstream>
 	<stdlib.h>
 	"Visual.h"
-	"Reader.h"
 	"ComputerBattleGame.h"
 
-1496143011 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\visual.h
+1497126786 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\visual.h
 	<stdio.h>
 	<conio.h>
 	<iostream>
 	<windows.h>
 
-1496073568 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\reader.h
+1497132662 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\reader.h
 	<iostream>
 	<vector>
 
-1496142813 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\computerbattlegame.h
+1497127918 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\computerbattlegame.h
 	<vector>
-	"Player.h"
-	"HumPlay.h"
-	"ComPlay.h"
-	"Map.h"
 	<stdlib.h>
+	"Map.h"
 	"Visual.h"
 	"Reader.h"
 	"Math.h"
+	"Player.h"
+	"HumPlay.h"
+	"ComPlay.h"
 	"Computer.h"
 
-1496100158 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\player.h
+1497132456 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\player.h
 	<string>
 	<vector>
 	<iostream>
 	"windows.h"
 	"Shot.h"
+	"Map.h"
 	"Computer.h"
 	"Win95.h"
 	"WinXP.h"
@@ -180,97 +180,97 @@
 	"Win10.h"
 	"Debian.h"
 
-1496073568 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\shot.h
+1497132668 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\shot.h
 	<string>
 	<vector>
 
-1496073568 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\computer.h
+1497132043 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\computer.h
 	<string>
+	<iostream>
 
-1496073568 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\win95.h
+1497132686 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\win95.h
 	"computer.h"
 
-1496073568 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\winxp.h
+1497132692 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\winxp.h
 	"Computer.h"
 
-1496073568 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\win7.h
+1497132681 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\win7.h
 	"computer.h"
 
-1496073568 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\win10.h
+1497132675 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\win10.h
 	"computer.h"
 
-1496073568 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\debian.h
+1497132643 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\debian.h
 	"Computer.h"
 
-1496073568 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\humplay.h
+1497132648 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\humplay.h
 	<stdlib.h>
 	"visual.h"
 	"Player.h"
 	"Reader.h"
 	"Map.h"
 
-1496073568 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\map.h
+1497132387 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\map.h
 	<iostream>
+	<iomanip>
+	<string>
 
-1496142916 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\complay.h
+1497131975 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\complay.h
 	"player.h"
 	"Math.h"
 	<chrono>
 	<thread>
+	<windows.h>
 
-1496073568 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\math.h
+1497132441 c:\users\blablabla\documents\git\computer_battle\computer_battle\include\math.h
 	"vector"
 	<time.h>
+	<iostream>
 	<stdlib.h>
 
-1496142908 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\complay.cpp
+1497131950 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\complay.cpp
 	"ComPlay.h"
 
-1496073568 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\computer.cpp
+1497132034 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\computer.cpp
 	"Computer.h"
-	<iostream>
 
-1496145440 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\computerbattlegame.cpp
+1497128256 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\computerbattlegame.cpp
 	"ComputerBattleGame.h"
 
 1496099372 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\debian.cpp
 	"Debian.h"
 
-1496099732 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\humplay.cpp
+1497132259 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\humplay.cpp
 	"HumPlay.h"
 
-1496073568 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\map.cpp
+1497132365 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\map.cpp
 	"Map.h"
-	<iostream>
-	<iomanip>
-	<string>
 
-1496073568 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\math.cpp
+1497132403 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\math.cpp
 	"Math.h"
-	<iostream>
 
-1496099701 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\player.cpp
+1497125583 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\player.cpp
 	"player.h"
 	"Map.h"
 
-1496087901 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\reader.cpp
+1497130527 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\reader.cpp
 	"Reader.h"
 
 1496073568 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\shot.cpp
 	"Shot.h"
 
-1496143000 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\visual.cpp
+1497127682 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\visual.cpp
 	"Visual.h"
 
 1496082870 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\win10.cpp
 	"Win10.h"
 
-1496082880 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\win7.cpp
+1497124955 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\win7.cpp
 	"Win7.h"
 
-1496099349 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\win95.cpp
+1497124955 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\win95.cpp
 	"Win95.h"
 
-1496099362 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\winxp.cpp
+1497124955 source:c:\users\blablabla\documents\git\computer_battle\computer_battle\src\winxp.cpp
 	"WinXp.h"
 

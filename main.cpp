@@ -2,53 +2,49 @@
 #include <sstream>
 #include <stdlib.h>
 #include "Visual.h"
-#include "Reader.h"
 #include "ComputerBattleGame.h"
+
 using namespace ComputerBattle;
 
 int main()
 {
-    Visual visual2;
-    Reader reader2;
-    ComputerBattleGame game2;
+    Visual visual;
+    ComputerBattleGame game;
 
-    visual2.left();
+    visual.center();
     system("mode 640");
     system("color 02");
 
-    visual2.welcome();
+    visual.welcome();
     system("PAUSE");
     system("CLS");
 
-    visual2.choosePlayers();
+    visual.choosePlayers();
     int gameType;
     std::cin >> gameType;
     system("CLS");
 
     if (gameType == 2){
-        game2.generateComputerPlayer("Computer");
+        game.generateComputerPlayer("Computer");
         system("PAUSE");
         system("CLS");
     }
 
     if (gameType == 3){ //DEBUGGING TOOL
-        game2.generateComputerPlayer("Computer 1");
-        game2.generateComputerPlayer("Computer 2");
+        game.generateComputerPlayer("Computer 1");
+        game.generateComputerPlayer("Computer 2");
         system("PAUSE");
         system("CLS");
     }
 
-    game2.createHumanPlayer();
+    game.createHumanPlayer();
     system("CLS");
 
-    std::string name = game2.play();
+    std::string nameWinner = game.play();
     system("CLS");
-    visual2.endGame(name);
+    visual.endGame(nameWinner);
 
     system("PAUSE");
 
     return 0;
-
-
-
 }

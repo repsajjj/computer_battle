@@ -1,7 +1,6 @@
 #include "Shot.h"
 
 namespace ComputerBattle{
-
     Shot::Shot(int xT, int yT)
     {
         x = xT;

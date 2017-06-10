@@ -15,8 +15,6 @@ namespace ComputerBattle{
             std::string getName();
             std::string print();
 
-        protected:
-
         private:
             int x;
             int y;

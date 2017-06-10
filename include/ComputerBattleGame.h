@@ -1,13 +1,13 @@
 #pragma once
 #include <vector>
-#include "Player.h"
-#include "HumPlay.h"
-#include "ComPlay.h"
-#include "Map.h"
 #include <stdlib.h>
+#include "Map.h"
 #include "Visual.h"
 #include "Reader.h"
 #include "Math.h"
+#include "Player.h"
+#include "HumPlay.h"
+#include "ComPlay.h"
 #include "Computer.h"
 
 namespace ComputerBattle{

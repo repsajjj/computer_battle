@@ -1,5 +1,4 @@
 #include "Computer.h"
-#include <iostream>
 namespace ComputerBattle{
         Computer::Computer(){
             status = false;
@@ -27,7 +26,6 @@ namespace ComputerBattle{
         };
 
         std::string Computer::getSymbol(){
-
             return symbol;
         };
 

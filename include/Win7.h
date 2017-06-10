@@ -7,11 +7,6 @@ namespace ComputerBattle{
         public:
             Win7();
             virtual ~Win7();
-
-        protected:
-
-
-        private:
     };
 };
 

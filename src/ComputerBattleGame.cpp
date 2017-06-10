@@ -22,6 +22,7 @@ namespace ComputerBattle{
                     std::string value = computerPark[i].print();
                     map->insertValue(x,y,value);
             }
+
             map->draw();
             players.push_back(*tempPlayer);
             delete map;
@@ -55,6 +56,7 @@ namespace ComputerBattle{
                     playerID=1; oPlayerID=0;
                     tempComputerPark = players[0].getComputerPark();
             }
+
             std::cout << players[playerID].getName() << " it's your turn" << std::endl;
             std::cout << "To which computer you want to send the virus" << std::endl;
             if (players[playerID].getType() == "Human"){
@@ -79,6 +81,7 @@ namespace ComputerBattle{
                         map->insertValue(x,y,value);
                     }
             }
+
             map->draw();
             delete map;
             std::cout << "Coordinates(A1)?: ";

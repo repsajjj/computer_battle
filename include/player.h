@@ -4,6 +4,7 @@
 #include <iostream>
 #include "windows.h"
 #include "Shot.h"
+#include "Map.h"
 #include "Computer.h"
 #include "Win95.h"
 #include "WinXP.h"

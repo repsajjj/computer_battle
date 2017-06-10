@@ -1,5 +1,5 @@
 #include "Math.h"
-#include <iostream>
+
 namespace ComputerBattle{
     Math::Math()
     {

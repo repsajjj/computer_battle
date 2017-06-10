@@ -7,10 +7,6 @@ namespace ComputerBattle{
         public:
             Debian();
             virtual ~Debian();
-
-        protected:
-
-        private:
     };
 };
 

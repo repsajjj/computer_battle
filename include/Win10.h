@@ -7,12 +7,6 @@ namespace ComputerBattle{
         public:
             Win10();
             virtual ~Win10();
-
-
-        protected:
-
-
-        private:
     };
 }
 

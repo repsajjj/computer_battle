@@ -3,6 +3,7 @@
 #include "Math.h"
 #include <chrono>
 #include <thread>
+#include <windows.h>
 
 namespace ComputerBattle{
     class ComPlay: public Player
@@ -10,8 +11,6 @@ namespace ComputerBattle{
         public:
             ComPlay(std::string name);
             virtual ~ComPlay();
-
-
     };
 }
 

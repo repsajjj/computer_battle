@@ -1,7 +1,4 @@
 #include "Map.h"
-#include <iostream>
-#include <iomanip>
-#include <string>
 
 namespace ComputerBattle{
     Map::Map(){
@@ -18,7 +15,6 @@ namespace ComputerBattle{
     void Map::draw(){
         int row = 10;
         int col = 9;
-
         char a = 'A';
 
         for(int i = 0; i <= col; i++) {
@@ -29,7 +25,7 @@ namespace ComputerBattle{
         for (int j = 0; j <= col; j++){
              std::cout << "------" ;
 
-            }
+        }
         std::cout << std::endl;
 
         for (int i = 0; i <row; i++){
@@ -40,10 +36,8 @@ namespace ComputerBattle{
             std::cout << std::endl;
             for (int j = 0; j <= col; j++){
                 std::cout << "------" ;
-
             }
             std::cout << std::endl;
         }
     }
-
 };
