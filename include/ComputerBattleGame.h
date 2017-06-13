@@ -10,20 +10,19 @@
 #include "ComPlay.h"
 #include "Computer.h"
 
-namespace ComputerBattle{
-    class ComputerBattleGame
-    {
-        public:
-            ComputerBattleGame();
-            virtual ~ComputerBattleGame();
-            void generateComputerPlayer(std::string name);
-            void createHumanPlayer();
-            std::string play();
+namespace ComputerBattle {
+class ComputerBattleGame {
+public:
+    ComputerBattleGame();
+    virtual ~ComputerBattleGame();
+    void generateComputerPlayer(std::string name);
+    void createHumanPlayer();
+    std::string play();
 
 
-        private:
-            std::vector<Player> players;
-    };
-}
+private:
+    std::vector<Player> players;
+};
+};
 
 

@@ -5,12 +5,11 @@
 #include <thread>
 #include <windows.h>
 
-namespace ComputerBattle{
-    class ComPlay: public Player
-    {
-        public:
-            ComPlay(std::string name);
-            virtual ~ComPlay();
-    };
-}
+namespace ComputerBattle {
+class ComPlay: public Player {
+public:
+    ComPlay(std::string name);
+    virtual ~ComPlay();
+};
+};
 

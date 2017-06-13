@@ -4,18 +4,18 @@
 #include <iostream>
 #include <windows.h>
 
-namespace ComputerBattle{
-    class Visual
-    {
-        public:
-            Visual();
-            virtual ~Visual();
-            void welcome();
-            void shop();
-            void center();
-            void choosePlayers();
-            void endGame(std::string name);
-            void computerDown(std::string name, int width);
-    };
-}
-
+namespace ComputerBattle {
+class Visual {
+public:
+    Visual();
+    virtual ~Visual();
+    void welcome();
+    void shop();
+    void center();
+    void color (std::string color);
+    void nextPage();
+    void choosePlayers();
+    void endGame(std::string name);
+    void computerDown(std::string name, int width);
+};
+};

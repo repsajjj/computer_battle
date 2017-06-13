@@ -6,15 +6,14 @@
 #include "Map.h"
 
 
-namespace ComputerBattle{
+namespace ComputerBattle {
 
-class HumPlay : public Player
-{
-    public:
-        HumPlay();
-        virtual ~HumPlay();
+class HumPlay : public Player {
+public:
+    HumPlay();
+    virtual ~HumPlay();
 
 };
-}
+};
 
 

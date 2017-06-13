@@ -1,40 +1,38 @@
 #include "Shot.h"
 
-namespace ComputerBattle{
-    Shot::Shot(int xT, int yT)
-    {
-        x = xT;
-        y = yT;
-        position.push_back(x);
-        position.push_back(y);
-    }
+namespace ComputerBattle {
+Shot::Shot(int xT, int yT) {
+    x = xT;
+    y = yT;
+    position.push_back(x);
+    position.push_back(y);
+}
 
-    Shot::~Shot()
-    {
-        //dtor
-    }
+Shot::~Shot() {
+    //dtor
+}
 
-    int Shot::getXPosition(){
-        return x;
-    }
+int Shot::getXPosition() {
+    return x;
+}
 
-    int Shot::getYPosition(){
-       return y;
-    }
+int Shot::getYPosition() {
+    return y;
+}
 
-    void Shot::setName(std::string aName){
-        name = aName;
-    }
+void Shot::setName(std::string aName) {
+    name = aName;
+}
 
-    std::string Shot::getName(){
-        return name;
-    }
+std::string Shot::getName() {
+    return name;
+}
 
-    std::string Shot::print(){
-        return "**";
-    }
+std::string Shot::print() {
+    return "**";
+}
 
-    std::vector<int> Shot::getPosition(){
-        return position;
-    }
+std::vector<int> Shot::getPosition() {
+    return position;
+}
 }

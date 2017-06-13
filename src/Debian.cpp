@@ -1,15 +1,13 @@
 #include "Debian.h"
-namespace ComputerBattle{
-    Debian::Debian()
-    {
-        setSymbol("DE");
-        setCost(300);
-        setName("Debian 8");
-        setWidth(1);
-    }
+namespace ComputerBattle {
+Debian::Debian() {
+    setSymbol("DE");
+    setCost(300);
+    setName("Debian 8");
+    setWidth(1);
+}
 
-    Debian::~Debian()
-    {
-        //dtor
-    }
+Debian::~Debian() {
+    //dtor
+}
 }
